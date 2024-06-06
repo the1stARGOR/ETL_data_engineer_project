@@ -15,13 +15,6 @@ To use the template, please install the following.
 
 If you are using windows please setup WSL and a local Ubuntu Virtual machine following **[the instructions here](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview)**. Install the above prerequisites on your ubuntu terminal, if you have trouble installing docker follow **[the steps here](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04#step-1-installing-docker)**.
 
-### Setup infra
-
-You can create your GitHub repository based on this template by clicking on the `Use this template button in the **[data_engineering_project_template](https://github.com/josephmachado/data_engineering_project_template)** repository. Clone your repository and replace content in the following files
-
-1. **[CODEOWNERS](https://github.com/the1stARGOR/ETL_data_engineer_project/blob/main/.github/CODEOWNERS)**: In this file change the user id from `@the1stARGOR` to your Github user id.
-2. **[cd.yml](https://github.com/the1stARGOR/ETL_data_engineer_project/blob/main/.github/workflows/cd.yml)**: In this file change the `dbt_data_engineer_project` part of the `TARGET` parameter to your repository name.
-3. **[variable.tf](https://github.com/the1stARGOR/ETL_data_engineer_project/blob/main/terraform/variable.tf)**: In this file change the default values for `alert_email_id` and `repo_url` variables with your email and [github repository url](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/GitHub-URL-find-use-example) respectively.
 
 Run the following commands in your project directory.
 
@@ -44,9 +37,6 @@ make cloud-airflow # this command will forward Airflow port from EC2 to your mac
 make cloud-metabase # this command will forward Metabase port from EC2 to your machine and opens it in the browser
 # use https://github.com/josephmachado/data_engineering_project_template/blob/main/env file to connect to the warehouse from metabase
 ```
-
-**Data infrastructure**
-![DE Infra](/assets/images/infra.png)
 
 **Project structure**
 ![Project structure](/assets/images/proj_1.png)
