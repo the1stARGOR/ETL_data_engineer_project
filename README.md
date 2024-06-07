@@ -1,6 +1,6 @@
 # Data engineering project template
 
-Detailed explanation can be found **[`in this post`](https://www.startdataengineering.com/post/data-engineering-projects-with-free-template/)**
+Drop by my Medium post on the project **[`in this post`](https://medium.com/@sreeragckm28/dbt-data-build-tool-a-simple-project-a675db161b19)**
 
 ## Prerequisites   
 
